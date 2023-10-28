@@ -10,7 +10,8 @@ datasource db {
 
 model store {
   id       String   @id @default(cuid())
-  name     String   @unique
+  name     String   
+  userId   String   
   createAt DateTime @default(now())
   updateAt DateTime @updatedAt
 }

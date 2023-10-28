@@ -1,5 +1,7 @@
 "use client"
 import { useStoreModel } from "@/Hooks/use-store-model";
+import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 import {useEffect}from "react";
 
 
@@ -14,11 +16,7 @@ const SetupPage = () => {
     }
   }, [isOpen, onOpen]);
 
-  return (
-    <div >
-      root page
-    </div>
-  )
+  return null;
 };
 
 export default SetupPage;
